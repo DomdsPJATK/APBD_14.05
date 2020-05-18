@@ -27,7 +27,7 @@ namespace APBD_14._05.Services
 
             var result = _context.Doctor.Add(new Doctor()
             {
-                IdDoctor = request.IdDoctor
+                IdDoctor = request.IdDoctor,
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 Email = request.Email

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,8 +28,9 @@ namespace APBD_14._05
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddTransient<IServiceDataBase, DoctorsServiceDataBase>();
-            services.AddDbContext<ClinicDbContext>();
+            services.AddDbContext<ClinicDbContext>(options => options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s19036;Integrated Security=True"));
             services.AddControllers();
         }
 

@@ -28,6 +28,8 @@
         <e p="Migrations" t="Include">
           <e p="20200518203330_addTablesWithRelations.cs" t="Include" />
           <e p="20200518203330_addTablesWithRelations.Designer.cs" t="Include" />
+          <e p="20200518210842_AddTableContents.cs" t="Include" />
+          <e p="20200518210842_AddTableContents.Designer.cs" t="Include" />
           <e p="ClinicDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Model" t="Include">

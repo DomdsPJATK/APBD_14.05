@@ -44,6 +44,15 @@ namespace APBD_14._05.Migrations
                     b.HasKey("IdDoctor");
 
                     b.ToTable("Doctor");
+
+                    b.HasData(
+                        new
+                        {
+                            IdDoctor = 1,
+                            Email = "pawel.lekarski@gmail.com",
+                            FirstName = "Paweł",
+                            LastName = "Lekarski"
+                        });
                 });
 
             modelBuilder.Entity("APBD_14._05.Model.Medicament", b =>
@@ -71,6 +80,15 @@ namespace APBD_14._05.Migrations
                     b.HasKey("IdMedicament");
 
                     b.ToTable("Medicament");
+
+                    b.HasData(
+                        new
+                        {
+                            IdMedicament = 1,
+                            Description = "Super lek, nie przedawkujesz mordo!",
+                            Name = "Paracetamol",
+                            Type = "Przeciwbólowy/Przeciwgorączkowy"
+                        });
                 });
 
             modelBuilder.Entity("APBD_14._05.Model.Patient", b =>
@@ -96,6 +114,15 @@ namespace APBD_14._05.Migrations
                     b.HasKey("IdPatient");
 
                     b.ToTable("Patient");
+
+                    b.HasData(
+                        new
+                        {
+                            IdPatient = 1,
+                            Birthdate = new DateTime(2001, 9, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FirstName = "Kacper",
+                            LastName = "Bolinoga"
+                        });
                 });
 
             modelBuilder.Entity("APBD_14._05.Model.Prescription", b =>
@@ -124,6 +151,16 @@ namespace APBD_14._05.Migrations
                     b.HasIndex("IdPatient");
 
                     b.ToTable("Prescription");
+
+                    b.HasData(
+                        new
+                        {
+                            IdPrescription = 1,
+                            Date = new DateTime(1981, 5, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DueDate = new DateTime(2020, 5, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IdDoctor = 1,
+                            IdPatient = 1
+                        });
                 });
 
             modelBuilder.Entity("APBD_14._05.Model.PrescriptionMedicament", b =>
@@ -147,6 +184,15 @@ namespace APBD_14._05.Migrations
                     b.HasIndex("IdMecidament");
 
                     b.ToTable("Prescription_Medicament");
+
+                    b.HasData(
+                        new
+                        {
+                            IdPrescription = 1,
+                            Details = "Tylko na pusty żołądek",
+                            Dose = 50,
+                            IdMecidament = 1
+                        });
                 });
 
             modelBuilder.Entity("APBD_14._05.Model.Prescription", b =>

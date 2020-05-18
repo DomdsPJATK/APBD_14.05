@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\domin\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\domin\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_APBD_14.05.-452235168.00" t="ExcludeRecursive" />
+    <e p="C:\Users\domin\RiderProjects\APBD_14.05" t="IncludeFlat">
+      <e p="APBD_14.05" t="IncludeRecursive">
+        <e p="APBD_14.05.csproj" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Configuration" t="Include">
+          <e p="DoctorEfConfiguration.cs" t="Include" />
+          <e p="MedicamentEfConfiguration.cs" t="Include" />
+          <e p="PatientEfConfiguration.cs" t="Include" />
+          <e p="PrescriptionEfConfiguration.cs" t="Include" />
+          <e p="PrescriptionMedicamentEfConfiguration.cs" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="DoctorsController.cs" t="Include" />
+        </e>
+        <e p="DTO" t="Include">
+          <e p="Request" t="Include">
+            <e p="EnrollDoctorRequest.cs" t="Include" />
+            <e p="ModiefiedDoctorRequest.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20200518203330_addTablesWithRelations.cs" t="Include" />
+          <e p="20200518203330_addTablesWithRelations.Designer.cs" t="Include" />
+          <e p="ClinicDbContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="ClinicDbContext.cs" t="Include" />
+          <e p="Doctor.cs" t="Include" />
+          <e p="Medicament.cs" t="Include" />
+          <e p="Patient.cs" t="Include" />
+          <e p="Prescription.cs" t="Include" />
+          <e p="PrescriptionMedicament.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="APBD_14.05.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="DoctorsServiceDataBase.cs" t="Include" />
+          <e p="ServiceDataBase.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="APBD_14.05.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
